@@ -1,0 +1,76 @@
+@import "tailwindcss";
+#root{
+background: #011b22;
+color:white;
+}
+#nav ul li{
+  border-radius: 30px;
+  padding: 10px;
+}
+
+
+#nav{
+color:white;
+height:fit-content;
+}
+
+#nav ul {
+    margin: 0 20px;
+    padding:0 20px;
+
+}
+
+.reseau ul li{
+    border:1px;
+    padding:2px
+}
+.reseau{
+    margin-left: 15%;
+}
+.reseau ul li:hover{
+  transform: scale(1.2);
+}
+.button:hover{
+    transform: scale(1.1);
+}
+
+.cadre{
+    animation:defiler  10s infinite linear alternate-reverse;
+    transform: translatex(650px);
+}
+.cadre:hover{
+    filter: drop-shadow(0 0 5px #646cffaa);
+    
+}
+
+@keyframes defiler{
+    0%{
+        transform:translatex(300px)
+    }
+    50%{
+        
+    }
+    100%{
+        transform:translatex(-300px)
+    }
+}
+
+@media (width >= 48rem /* 768px */) {
+@keyframes defiler{
+    0%{
+        transform:translatex(650px)
+    }
+    50%{
+        
+    }
+    100%{
+        transform:translatex(-650px)
+    }
+}
+}
+
+.contact ul li {
+    display: flex;
+    gap:15px
+}
+
